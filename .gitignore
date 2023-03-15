@@ -1,2 +1,4 @@
 node_modules/
 Notes.txt
+.vscode/
+coverage/
