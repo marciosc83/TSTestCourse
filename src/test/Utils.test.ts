@@ -124,3 +124,40 @@ describe('StringUtils test', () => {
         expect(actual).toBe('ABC');
     })
 })
+
+describe('StringUtils Errors suite', () => {
+    let sut: StringUtils;
+
+    beforeEach(() => {
+        sut = new StringUtils();
+    })
+
+    afterEach(() => {
+        //clearing mocks
+    })
+
+    it('Should throw error on invalid argument - FUNCTION', () => {
+        function expectError() {
+            const actual = sut.toUpperCase('');
+        }
+        expect(expectError).toThrow();
+        expect(expectError).toThrowError('Invalid argument!');
+    })
+
+    it('Should throw error on invalid argument - ARROW FUNCTION', () => {
+        expect( () => {
+            sut.toUpperCase('');
+        }).toThrowError('Invalid argument!');
+    })
+
+    it('Should throw error on invalid argument - TRY CATCH BLOCK', (done) => {
+        try {
+            sut.toUpperCase('');
+            done('GetStringInfo should throw error for invalid argument!')
+        } catch (error) {
+            expect(error).toBeInstanceOf(Error);
+            expect(error).toHaveProperty('message', 'Invalid argument!');
+            done();
+        }
+    })
+})
