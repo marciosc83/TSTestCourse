@@ -1,2 +1,2 @@
-Projeto de curso de Teste de Typescript/Javascript com Jest
+Training test project using Typescript/Javascript with Jest.
 
