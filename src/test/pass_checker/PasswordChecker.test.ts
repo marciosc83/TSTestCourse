@@ -6,7 +6,7 @@ describe('PasswordChecker test suite', () => {
 
     beforeEach(() => {
         sut = new PasswordChecker();
-    })
+    }) 
 
     it('Password with less than 8 chars is invalid', () => {
         const actual = sut.checkPassword('1234567');

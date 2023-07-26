@@ -5,7 +5,7 @@ export class StringUtils {
         }
         
         return toUpperCase(arg);
-    }
+    } 
 }
 
 export function toUpperCase(arg: string) {
