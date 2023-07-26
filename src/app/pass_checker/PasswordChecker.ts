@@ -7,7 +7,7 @@ export enum PasswordErrors {
 
 export interface CheckResult {
     valid: boolean,
-    reasons: PasswordErrors[]
+    reasons: PasswordErrors[] 
 }
 
 export class PasswordChecker {

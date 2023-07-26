@@ -2,7 +2,7 @@ import { PasswordChecker, PasswordErrors } from "../../app/pass_checker/Password
 
 
 describe('PasswordChecker test suite', () => {
-    let sut: PasswordChecker;
+    let sut: PasswordChecker; 
 
     beforeEach(() => {
         sut = new PasswordChecker();

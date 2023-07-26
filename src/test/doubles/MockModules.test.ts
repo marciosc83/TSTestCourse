@@ -24,5 +24,5 @@ describe('Module tests', () => {
     it('String with ID', () => {
         const result = OtherUtils.toLowerCaseWithID('ABC');
         expect(result).toBe('abc123');
-    })
+    }) 
 })

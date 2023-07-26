@@ -13,7 +13,7 @@ const config: Config.InitialOptions = {
     ],
     testMatch: [
         `${baseTestDir}/**/*.ts`
-    ]
+    ] 
 }
 
 export default config;

@@ -6,7 +6,7 @@ export type stringInfo = {
     characters: string[],
     length: number,
     extraInfo: Object | undefined
-}
+} 
 
 type LoggerServiceCallBack = (arg: string) => void;
 

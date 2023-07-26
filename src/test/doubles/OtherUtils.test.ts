@@ -13,7 +13,7 @@ describe.skip('OtherUtils test suite', () => {
 
         const actual = calculateComplexity(someInfo as any); //STUB should not be used inside the assertion
         expect(actual).toBe(10);
-    })
+    }) 
 
     it('ToUpperCase with invalid argument - FAKE exaxmple', () => {
         const actual = toUpperCaseWithCallBack('', () => {}); //FAKE
