@@ -4,7 +4,8 @@
   "description": "Projeto de curso de Teste de Typescript/Javascript com Jest",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "ts-node src/app/server_app/Launcher.ts"
   },
   "repository": {
     "type": "git",

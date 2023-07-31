@@ -1,0 +1,32 @@
+@token = 0a272cbf8d2dd48ba0d7
+
+POST http://localhost:8080/reservation
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+    "user": "user1",
+    "startDate": "startDate",
+    "endDate":"endDate",
+    "room": "someRoom"
+}
+###
+
+GET http://localhost:8080/reservation/69c0c1ef9adbb36661da
+Authorization: {{token}}
+###
+
+GET http://localhost:8080/reservation/all
+Authorization: {{token}}
+###
+
+PUT http://localhost:8080/reservation/69c0c1ef9adbb36661da
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+    "room": "someOtherRoom",
+    "user": "user2"
+
+}
+###
